@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Notification",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "description": "日常通知和小提示。",
 
