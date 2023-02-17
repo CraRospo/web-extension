@@ -51,7 +51,7 @@ function dispatchNotification(time) {
     case isBackToHomeTime(time):
       return new Notification('回家时间！', {
         icon: '/icons/clock.png',
-        body: '到点了到点了到点了！还有十五分钟，别忘记打卡！'
+        body: '到点了到点了到点了！还有十分钟，别忘记打卡！'
       })
     default:
       return ''
@@ -83,5 +83,5 @@ function isLunchTime(str) {
  * @returns {Boolean}
  */
 function isBackToHomeTime(str) {
-  return str === '09:00:00'
+  return str === '09:05:00'
 }
