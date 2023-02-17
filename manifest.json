@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Notification",
+  "version": "1.0",
+
+  "description": "日常通知和小提示。",
+
+  "icons": {
+    "48": "icons/clock.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "notifications"
+  ],
+
+  "background": {
+    "scripts": ["index.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/clock.png",
+    "default_title": "Notification",
+    "default_popup": "index.html"
+  }
+}
