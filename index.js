@@ -38,7 +38,7 @@ function checkTime() {
  */
 function dispatchNotification(time) {
   switch (true) {
-    case isBackToHomeTime(time):
+    case isLunchTime(time):
       return new Notification('午饭时间！', {
         icon: '/icons/clock.png',
         body: '午饭时间到了！赶紧出发！您的小伙伴正在楼下等您！'
@@ -64,7 +64,6 @@ function dispatchNotification(time) {
  * @returns {Boolean}
  */
 function isDrinkWaterTime(str) {
-  console.log(str)
   const timeRegexp = new RegExp(/^0[1-9]:00:00/)
   return timeRegexp.test(str)
 }
